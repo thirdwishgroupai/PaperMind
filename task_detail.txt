@@ -1,0 +1,16 @@
+1. Download the ICRL review dataset 2025
+https://raw.githubusercontent.com/papercopilot/paperlists/refs/heads/main/iclr/iclr2025.json
+
+2. Utilize Arxiv API and download a sample of papers 50-250 from the dataset 
+https://pypi.org/project/arxiv/
+
+3. Use docling API to convert all the papers into a well structured dataset for docetl
+(Alternatively you can use docetl.org playground and check)
+
+4. Perform the following analysis with docetl
+
+1. Divide all documents into manageable chunks 
+2. Map all the topics per paper 
+3. Map all the innovations introduced in the paper
+4. Create a summary of each paper
+5. Use the map operator again to detect relationships between entities, such as co-authorships or citations, within and across documents.
